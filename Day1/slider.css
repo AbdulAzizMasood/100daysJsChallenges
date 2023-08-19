@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #313c4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.icon-image{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.icon-image.right
+{
+    transform: rotate(180deg);
+}
+.frame{
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+
+  }
+  
+  .slider{
+    display: flex;
+    flex-direction: row; 
+    transition: all 1s ease;
+  }
+  
+  .images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+.top{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.buttons{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 800ms ease;
+}
+.bottom {
+    display: flex;
+    gap : 30px
+}
