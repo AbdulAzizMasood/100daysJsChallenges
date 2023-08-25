@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #045138;
+}
+.wrapper{
+position: relative;
+width: 400px;
+height: 80px;
+background-color: #FFF;
+padding: 16px 32px;
+overflow: hidden;
+font-family: 'Poppins' , sans-serif;
+transition: all 0.6s ease-out;
+border-radius: 20px;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.top-search{
+display : flex;
+width: 100%;
+height: fit-content;
+align-items: center;
+justify-content: space-between;
+}
+.top-search input{
+    font-size: 24px;
+    width: 70%;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+.top-search input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    color: #045c40;
+    ;
+}
+.top-search button{
+    background-color: transparent;
+}
+.top-search > span{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #045c40;
+    font-size: 22px;
+    margin-inline: auto;
+    padding: 11px;
+    cursor: pointer;
+    background-color: #045c40;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.top-search button span{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #045c40;
+    background-color: #fff;
+    color: #045c40;
+    outline: 1px solid black;
+    font-size: 26px;
+    margin-inline: auto;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.top-search button span:hover{
+    background-color: #045c40;
+    color: #fff;
+    transition: all 0.2s ease-in;
+
+}
+.weather-box{
+    text-align: center;
+}
+.weather-box img{
+    width: 45%;
+    margin-inline : auto;
+    margin-top: 30px;
+}
+.weather-box .temperature{
+    position: relative;
+    font-size: 2.9rem;
+    font-weight: 800;
+    margin-top: 30px;
+}
+.weather-box .temperature span{
+    /* position: absolute;
+    font-size: 1.5rem;
+    margin-left: 4px; */
+}
+.weather-box .description{
+    color: #2d2530;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.weather-details .humidity ,
+.weather-details .wind{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    height: fit-content;
+}
+
+.weather-details .humidity{
+    padding-left: 18px;
+    justify-content: flex-start;
+}
+.weather-details .wind{
+    padding-right: 18px;
+    justify-content: flex-end;
+}
+.weather-details .wind>span{
+    font-size: 28px;
+    margin-right: 12px;
+}
+.weather-details .humidity>span{
+    font-size: 28px;
+    margin-right: 12px;
+}
+.weather-details .text{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    display: none;
+    opacity: 0;
+}
+.not-found img{
+    width: 100%;
+    margin-inline: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+.not-found p{
+    color : #045c40;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+}
+.weather-box , .weather-details{
+    opacity: 0;
+    scale: 0;
+}
+.fadeIn {
+    animation : fadeIn 0.5s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+    
+}
